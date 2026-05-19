@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #17171a;
+  flex-direction: column;
+  display: flex;
+  height: 25vh;
+  justify-items: center;
+  align-items: center;
+}
+h1 {
+  font-family: "Space Grotesk";
+  font-weight: 600;
+  margin-top: 50px;
+  color: #ffffff;
+}
+
+input {
+  margin-top: 50px;
+  min-height: 30px;
+  width: 600px;
+  max-width: 80vw;
+  background-color: #202024;
+  border-radius: 5px;
+  border: #252529 1px solid;
+  color: #c2c2c2;
+  padding-left: 25px;
+  font-family: Inter;
+}
+
+::placeholder {
+  color: #858585;
+}
+
+input:focus {
+  outline: none;
+}
+
+main {
+  display: flex;
+  background-color: #121214;
+  color: #ffffff;
+  min-height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+  background-color: #17171a;
+  max-width: 70vw;
+  padding: 40px;
+  margin-top: 30px;
+  border: #252529 1px solid;
+  border-radius: 10px;
+}
+#icon {
+    fill: #17171A;
+    stroke: #E07B67 ;
+    stroke-width: 7;
+    cursor: pointer;
+    height: 20px;
+}
