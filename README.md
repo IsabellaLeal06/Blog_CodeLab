@@ -10,8 +10,9 @@ O projeto apresenta uma interface limpa e intuitiva para leitura de artigos, uti
 
 - HTML5
 - CSS3
+- JavaScript
 - Google Fonts
-- - JavaScript
+
 
 ---
 
