@@ -1,13 +1,17 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
+body{
+    background-color: #121214;
+}
 header {
   background-color: #17171a;
   flex-direction: column;
   display: flex;
-  height: 25vh;
+  padding: 40px 20px;
   justify-items: center;
   align-items: center;
 }
@@ -39,40 +43,56 @@ input:focus {
   outline: none;
 }
 
-main {
-  display: flex;
-  background-color: #121214;
-  color: #ffffff;
-  min-height: 75vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.card-1:focus,
+.card-2:focus, 
+.card-3:focus{
+  outline: #E07B67 solid 1px;
 }
 
+main {
+  display: flex;
+  color: #ffffff;
+  display: flex;
+  padding: 30px 20px;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 220px);
+}
+.cards{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  cursor: pointer;
+}
 .card-1,
 .card-2,
 .card-3 {
   background-color: #17171a;
-  max-width: 45vw;
   padding: 40px;
-  margin-top: 30px;
   border: #252529 1px solid;
   border-radius: 10px;
+  width: 600px;
+  max-width: 80vw;
 }
 
 .top{
   justify-content: space-between;
   display: flex;
   align-items: center;
-  border: red solid 1px;
 }
 
-#icon {
+.icon {
     fill: #17171A;
     stroke: #E07B67 ;
     stroke-width: 7;
     cursor: pointer;
     height: 20px;
+    width: 20px;
+    transition: fill 0.3s;
+}
+.icon.filled,
+.icon:hover {
+  fill: #E07B67;
 }
 
 h3{
@@ -88,6 +108,7 @@ h2{
   font-family: Inter;
   font-weight: 500;
   font-size: 18px;
+  
 }
 
 p {
